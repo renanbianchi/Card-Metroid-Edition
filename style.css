@@ -51,7 +51,9 @@ h1 {
 a {
   color: var(--gray);
   margin-top: 0.25rem;
-  /*display: flex;
+  /*This was some experiment i was doing while trying to resize a bigger PNG for the Super Metroid Logo.
+  Turns out it was easier to just resize the image using photoshop than traying to make it smaller using code.
+  display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;*/
