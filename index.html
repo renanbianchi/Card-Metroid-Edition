@@ -28,40 +28,60 @@
       <div class="container">
         <h1>Renan Bianchi</h1>
         <img src="images/github 2.svg" alt="ícone Github" />
-        <a href="https://github.com/renanbianchi">Renanbianchi</a>
+        <a href="https://github.com/renanbianchi" target="_blank">
+          Renanbianchi
+        </a>
 
         <p>I Solve Problems</p>
         <r>HTML|CSS Enthusiast</r>
         <!--social media links and icons-->
-        <ul>
-          <li>
-            <a href="https://www.youtube.com/channel/UCqxPlvf9c5PAh-zLPCP2fgQ">
-              <img src="images/youtube.svg" alt="icone youtube" target="_blank"
+        <ul id="socialLinks">
+          <li class="youtube">
+            <!--Moved Target="_blank" to fix social media links not opening on new window-->
+            <a
+              href="https://www.youtube.com/channel/UCqxPlvf9c5PAh-zLPCP2fgQ"
+              target="_blank"
+            >
+              <img src="images/youtube.svg" alt="icone youtube"
             /></a>
           </li>
-          <li>
-            <a href="https://www.facebook.com/bianchirenan/">
-              <img
-                src="images/facebook.svg"
-                alt="icone facebook"
-                target="_blank"
+          <li class="facebook">
+            <a href="https://www.facebook.com/bianchirenan/" target="_blank">
+              <img src="images/facebook.svg" alt="icone facebook"
             /></a>
           </li>
-          <li>
-            <a href="https://twitter.com/renanbianchi">
-              <img src="images/Twitter.svg" alt="icone twitter" target="_blank"
+          <li class="twitter">
+            <a href="https://twitter.com/renanbianchi" target="_blank">
+              <img src="images/Twitter.svg" alt="icone twitter"
             /></a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/bianchirenan/">
-              <img
-                src="images/instagram.svg"
-                alt="icone instagram"
-                target="_blank"
+          <li class="instagram">
+            <a href="https://www.instagram.com/bianchirenan/" target="_blank">
+              <img src="images/instagram.svg" alt="icone instagram"
             /></a>
           </li>
         </ul>
       </div>
+      <script>
+        //variáveis let ou const
+
+        const linksSocialMedia = {
+          github: 'extrems',
+          youtube: 'Hardwareunboxednow',
+          instagram: 'lia.ujo',
+          facebook: 'officialBardockObama',
+          twitter: 'Playstation'
+        }
+        //function changeSocialMedialinks() {
+        //for (let li of socialLinks.children) {
+        //const social = li.getAttribute('class')
+        //li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+
+        //alert(li.children[0].href)
+        //}
+        // }
+        //changeSocialMedialinks()
+      </script>
     </main>
   </body>
 </html>
